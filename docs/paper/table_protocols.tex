@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\caption{The trained CNN against the glyph-reuse test, on the documents each protocol tests (all conditions pooled). False alarms: real documents called generated. Detection: generated documents called generated. A held-out real source's row counts false alarms on that source only; a held-out generator's row counts detection of that generator only. AUC is over the same documents (--: one class only).}\label{tab:protocols}
+\footnotesize\begin{tabular}{@{}lrrrrrr@{}}\toprule
+ & \multicolumn{2}{c}{AUC} & \multicolumn{2}{c}{False alarms} & \multicolumn{2}{c}{Detection} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Protocol & Twin & CNN & Twin & CNN & Twin & CNN \\\midrule
+Random split & 0.939 & 0.975 & 0.0\% & 6.9\% & 59.7\% & 88.9\% \\
+Clean-only training & 0.939 & 0.860 & 0.0\% & 39.8\% & 59.7\% & 93.3\% \\
+Held-out real: CVL & 0.939 & 0.578 & 0.0\% & 90.9\% & 59.7\% & 70.0\% \\
+Held-out real: tablet & 0.936 & 0.599 & 0.0\% & 94.5\% & 59.7\% & 76.7\% \\
+Held-out real: MathWriting & 0.941 & 0.397 & 0.0\% & 100.0\% & 59.7\% & 100.0\% \\
+Held-out generator: Scribe & 0.996 & 0.623 & 0.0\% & 34.3\% & 97.1\% & 2.8\% \\
+Held-out generator: MathWriting & 0.912 & 0.487 & 0.0\% & 0.4\% & 20.0\% & 2.1\% \\
+\bottomrule\end{tabular}\end{table*}

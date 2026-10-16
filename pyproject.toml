@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inkcheck"
+version = "0.1.0"
+description = "Finds handwriting that software assembled from samples, with evidence a person can check."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Dylan Nguyen" }]
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "opencv-python-headless>=4.10",
+  "scikit-image>=0.24",
+  "pymupdf>=1.24",
+  "pillow>=10.0",
+  "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+# Only for training the printed-type model: Computer Modern, DejaVu and STIX fonts.
+bench = ["matplotlib>=3.8"]
+
+[project.urls]
+Repository = "https://github.com/dylann4500/inkcheck"
+Paper = "https://github.com/dylann4500/inkcheck/blob/main/docs/paper/inkcheck.pdf"
+
+[project.scripts]
+inkcheck = "inkcheck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["inkcheck*"]
+
+[tool.setuptools.package-data]
+inkcheck = ["calibration.json", "models/*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore:.*fitz.*:DeprecationWarning",
+  "ignore:builtin type .* has no __module__ attribute:DeprecationWarning",
+]

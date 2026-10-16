@@ -1,0 +1,9 @@
+\begin{table*}[t]\centering\caption{Glyph-reuse test: documents called \emph{generated}, by condition. For generated documents this is detection (documents in brackets); for real handwriting it is the false-alarm rate (95\% upper bound in brackets). CVL pages, already scans, are not printed and scanned again, and their other degradations use a fixed sample of 400 pages.}\label{tab:twin}
+\footnotesize\begin{tabular}{@{}lrrrrr@{}}\toprule
+Documents & As exported & JPEG & Half resolution & Print and scan & Phone photo \\\midrule
+Scribe (generated) & 97.9\% (189) & 97.4\% (189) & 91.5\% (189) & 100.0\% (189) & 98.9\% (189) \\
+MathWriting synth. (generated) & 25.3\% (150) & 24.7\% (150) & 19.3\% (150) & 19.3\% (150) & 11.3\% (150) \\
+Real: tablet & 0/11 [23.8\%] & 0/11 [23.8\%] & 0/11 [23.8\%] & 0/11 [23.8\%] & 0/11 [23.8\%] \\
+Real: CVL scans & 0/1{,}604 [0.2\%] & 0/400 [0.7\%] & 0/400 [0.7\%] & -- & 0/400 [0.7\%] \\
+Real: MathWriting human & 0/150 [2.0\%] & 0/150 [2.0\%] & 0/150 [2.0\%] & 0/150 [2.0\%] & 0/150 [2.0\%] \\
+\bottomrule\end{tabular}\end{table*}

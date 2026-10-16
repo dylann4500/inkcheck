@@ -1,0 +1,9 @@
+{
+  "_note": "Chance rate fixed at 2 per 1,000 complex letters (the floor in inkcheck.bench.metrics --calibrate, at or above the 95% upper bound measured on the first real pages, the author's tablet notes: 2,627 complex letters) before the CVL and MathWriting pages were seen. See docs/results.md and the paper's operating-point section.",
+  "complexity_min": 16.0,
+  "twin_displacement": 0.08,
+  "null_rate": 0.002,
+  "min_copies": 4,
+  "min_complex": 15,
+  "min_pen_px": 0.8
+}

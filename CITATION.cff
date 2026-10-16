@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use inkcheck, please cite the paper."
+title: "inkcheck: Detecting Sample-Assembled Handwriting by Glyph Reuse"
+authors:
+  - family-names: Nguyen
+    given-names: Dylan
+license: MIT
+repository-code: "https://github.com/dylann4500/inkcheck"
+preferred-citation:
+  type: generic
+  title: "Copies Give It Away: Detecting Sample-Assembled Handwriting by Glyph Reuse, Compared with a Trained Classifier"
+  authors:
+    - family-names: Nguyen
+      given-names: Dylan
+  year: 2026
+  url: "https://github.com/dylann4500/inkcheck/blob/main/docs/paper/inkcheck.pdf"

@@ -1,0 +1,8 @@
+\begin{table}[t]\centering\caption{Capacity sweep: the network at three widths, each trained and tested as in Table~\ref{tab:protocols}. Random split: AUC. Held-out CVL: CVL documents called generated. Held-out Scribe: Scribe documents caught.}\label{tab:sweep}
+\footnotesize\begin{tabular}{@{}lrrr@{}}\toprule
+ & Random split & CVL held out & Scribe held out \\
+Weights & AUC & false alarms & caught \\\midrule
+0.15 M & 0.970 & 92.5\% & 4.9\% \\
+0.58 M & 0.978 & 91.5\% & 2.8\% \\
+2.33 M & 0.982 & 90.3\% & 2.0\% \\
+\bottomrule\end{tabular}\end{table}

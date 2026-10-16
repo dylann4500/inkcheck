@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Real handwriting, and anything made from it, never leaves this machine:
+# data/ holds inputs (real pages, Scribe pages, hands), runs/ holds outputs.
+data/
+runs/
+
+.DS_Store
+
+# Local tool settings (preview servers)
+.claude/
+
+# Models are trained on private handwriting (inkcheck.bench.train_*); they stay on this machine.
+inkcheck/models/*.npz
